@@ -3,14 +3,11 @@
 ?>
 
 <?php
-	if ( is_page('home') ) {
-		echo "<h1>Home</h1>";
-	}
 
 	if ( is_page('list') ) {
 
 	    $args = array(  
-	        'post_type' => 'watercolors',
+	        'post_type' => 'watercolor',
 	        // 'post_status' => 'publish',
 	        // 'posts_per_page' => 8, 
 	        // 'orderby’ => 'title', 
@@ -20,10 +17,20 @@
 	    $loop = new WP_Query( $args ); 
 	        
 	    while ( $loop->have_posts() ) : $loop->the_post(); 
-	        echo "<h2>" . get_the_title() . "</h2>";
+	        include('templates/components/watercolor-swatch/template.php');
 	    endwhile;
 
 	    wp_reset_postdata();
+	}
+
+	if ( is_singular('watercolor') ) {
+
+		include('templates/modules/watercolor-detail/template.php');
+	}
+
+	if ( is_singular('pigment') ) {
+
+		include('templates/modules/pigment-detail/template.php');
 	}
 ?>
 
