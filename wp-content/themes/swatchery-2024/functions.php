@@ -10,3 +10,11 @@ function mytheme_enqueue_style() {
 }
 
 add_action( 'wp_enqueue_scripts', 'mytheme_enqueue_style' );
+
+
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+
+

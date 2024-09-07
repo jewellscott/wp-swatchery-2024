@@ -11,6 +11,9 @@
 </head>
 <body <?php body_class(); ?>>
 	<header>
-		<h1>Header</h1>
+		<inner-column>
+			<h1>SWATCHERY</h1>
+			<?php include('templates/components/site-menu/template.php'); ?>
+		</inner-column>
 	</header>
 	<main>

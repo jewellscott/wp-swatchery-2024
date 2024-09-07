@@ -21,3 +21,24 @@ Text Domain: swatchery2024
 @import 'css/modules.css';
 
 /* sections, etc */
+
+.current_page_item a {
+	background-color: #CCFFFF;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #f7f7f7;
+}
+
+header a {
+	display: inline-block;
+}
+
+a {
+	color: blue;
+}
+
+a:visited {
+	color: #66CCCC;
+}

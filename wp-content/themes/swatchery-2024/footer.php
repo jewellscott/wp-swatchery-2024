@@ -1,9 +1,9 @@
-</main>
-
-	<footer>
-		<h1>Footer</h1>
-	</footer>
-	
-	<?php wp_footer(); ?>
-</body>
+		</main>
+			<footer>
+				<inner-column>
+					<h1>Footer</h1>
+					<?php wp_footer(); ?>
+				</inner-column>
+			</footer>
+	</body>
 </html>

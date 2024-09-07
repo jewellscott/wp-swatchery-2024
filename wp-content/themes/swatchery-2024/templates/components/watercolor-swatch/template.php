@@ -5,11 +5,12 @@
 	<h2 class="name"><?php the_field('name'); ?></h2>
 	<h3 class="brand"><?php the_field('brand'); ?></h2>
 
+
 	<!--                Pigment                -->
 	<?php
 		$pigments = get_field('pigment');
 		if( $pigments ): ?>
-    <ul>
+    <ul class="pigments">
     <?php foreach( $pigments as $pigment ): 
         $permalink = get_permalink( $pigment->ID );
         $color_index_name = get_field('color_index_name', $pigment->ID );
@@ -33,7 +34,6 @@
         <li><?=$properties['granulation']?></li>
     </ul>
 	<a href="<?php the_permalink(); ?>">Detail</a>
-
 </watercolor-swatch>
 
 <style>
@@ -41,6 +41,18 @@
 	watercolor-swatch {
 		display: block;
 		padding: 10px;
+		max-width: 250px;
+		background-color: white;
+		padding: 1em;
+
+		picture {
+			background-color: blue;
+			margin-inline: auto;
+		}
+
+		.name, .brand {
+			text-align: center;
+		}
 	}
 
 </style>
