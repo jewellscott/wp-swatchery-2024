@@ -1,9 +1,8 @@
 <pigment-detail>
 	
-	<picture>
-		<img src="https://peprojects.dev/images/square.jpg" alt="" width="200">
-	</picture>
-	<h2 class="name"><?php the_field('color_index_name'); ?></h2>
+	<h1 class="color-index-name"><?php the_field('color_index_name'); ?></h1>
+
+	<h2 class="common-name"><?php the_field('common_name'); ?></h1>
 
 	<table>
 	  <!--  <tr>
@@ -32,7 +31,7 @@
 	   </tr> -->
 	   <tr>
 	      <th>Opacity</th>
-	      <td><?php the_field('opacity'); ?></td>
+	      <td><?php the_field('opacity'); ?><?php the_field('opacity'); ?></td>
 	   </tr>
 	   <tr>
 	      <th>Lightfastness</th>
@@ -55,17 +54,18 @@
 <style>
 
 	table {
-		table-layout: fixed;
+		table-layout: auto;
 		width: 100%;
-		border: 1px solid black;
-	}	
-
-	td, th {
-	  border: 1px solid black;
 	}
 
 	th {
-		width: content-fit;
+		background-color: #111111;
+		color: white;
+
 	}
+	td {
+		background-color: #f1f1f1;
+	}
+
 
 </style>

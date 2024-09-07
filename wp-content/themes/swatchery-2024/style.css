@@ -28,7 +28,6 @@ Text Domain: swatchery2024
 
 body {
 	font-family: sans-serif;
-	background-color: #f7f7f7;
 }
 
 header a {
@@ -40,5 +39,5 @@ a {
 }
 
 a:visited {
-	color: #66CCCC;
+	color: #333366;
 }
