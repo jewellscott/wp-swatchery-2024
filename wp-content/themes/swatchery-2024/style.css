@@ -11,7 +11,13 @@ Text Domain: swatchery2024
 */
 
 
-body {
-	background-color: blue;
-	font-family: sans-serif;
-}
+@import 'css/reset.css';
+@import 'css/setup.css';
+@import 'css/settings.css';
+@import 'css/structure.css';
+@import 'css/typography.css';
+
+@import 'css/comonents.css';
+@import 'css/modules.css';
+
+/* sections, etc */
